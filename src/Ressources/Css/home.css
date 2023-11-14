@@ -1,0 +1,105 @@
+.navbar{
+    -fx-background-color: #056980;
+}
+.bottomPane{
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.5),8,0,0,0);
+}
+.centerPane{
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.5),6,0,0,0);
+    -fx-background-radius: 15px;
+}
+.btn{    
+    -fx-cursor: hand;
+    -fx-text-fill: #267580;   
+}
+.btn:hover{  
+    -fx-background-color: #b9f7ff;
+    -fx-background-radius: 6px;   
+    -fx-border-color: #0998a8;
+    -fx-border-width:0px 0px 3px 0px;
+    -fx-text-fill: #0f5f68; 
+} 
+.btn:focused{ 
+    -fx-background-color: #b9f7ff;
+    -fx-background-radius: 6px;
+    -fx-border-color: #0998a8;
+    -fx-border-width:0px 0px 3px 0px;  
+}  
+.logout{
+    -fx-text-fill: #0b9bd0;
+    -fx-cursor: hand;
+}
+.logout:hover{
+    -fx-text-fill: #0b7bab;
+}
+.close{
+    -fx-background-color: #056980;
+    -fx-cursor: hand;
+}
+.headerList{
+    -fx-background-color: #c6f9ff;
+    -fx-background-radius: 12px 12px 0px 0px;
+    -fx-border-color: #0998a8;
+    -fx-border-width:0px 0px 3px 0px; 
+    -fx-text-fill: #0f5f68; 
+}
+.list-view{
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.5),3,0,0,0);
+    -fx-background-radius: 12px;
+    
+}
+.list-cell{
+    -fx-font-family: "serif";
+    -fx-font-size: 14px;
+}
+.list-cell:hover{
+    -fx-background-color: transparent;
+}
+.btnemploi{
+    -fx-background-color: #2e8d85;
+    -fx-background-radius: 20px;
+    -fx-cursor:hand;
+    -fx-text-fill: #fff;
+}
+.btnemploi:hover{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.5),5,0,0,0);
+    -fx-text-fill: #09e4f8; 
+}
+.btncursus{
+    -fx-background-color: #157eab;
+    -fx-background-radius: 20px;
+    -fx-cursor:hand;
+    -fx-text-fill: #fff; 
+}
+.btncursus:hover{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.5),5,0,0,0);
+    -fx-text-fill: #09e4f8; 
+}
+#save{
+    -fx-background-color: #2e8d85;
+    -fx-background-radius: 20px;
+    -fx-cursor:hand;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Monaco";
+    -fx-font-size: 12px;
+}
+#save:hover{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.5),5,0,0,0);
+    -fx-text-fill: #09e4f8; 
+}
+.update{
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.5),6,0,0,0);
+    -fx-background-radius: 15px;
+    -fx-text-fill: #2a969e; 
+   
+}
+.update:hover{
+    -fx-background-color: #63e4eb;
+    -fx-background-radius: 12px 12px 12px 12px;   
+    -fx-text-fill: #0f5f68;
+    
+}

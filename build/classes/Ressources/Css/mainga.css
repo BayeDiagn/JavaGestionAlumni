@@ -1,0 +1,50 @@
+.leftpane{
+    -fx-background-color:linear-gradient(to bottom ,#74c2be,#0e4779);
+}
+.lien{
+    -fx-cursor: hand;
+}
+.lien:hover{
+    -fx-text-fill: #08586f;
+}
+.connecter{
+    -fx-background-color: #2e8d85;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.8),8,0,0,0);
+    -fx-cursor:hand;
+    -fx-text-fill:#ffffff;
+}
+.connecter:hover{
+    -fx-background-color: #0b8665;
+    -fx-text-fill: #09e4f8; 
+}
+.leftbtn{
+    -fx-background-color: #063643;
+    -fx-background-radius: 20px;
+    -fx-cursor:hand;
+    
+}
+.leftbtn:hover{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.5),8,0,0,0);
+    -fx-text-fill: #21c2ee; 
+}
+.btnsuivant{
+    -fx-background-color: #2e8d85;
+    -fx-background-radius: 20px;
+    -fx-cursor:hand;
+    -fx-text-fill: #fff;
+}
+.btnsuivant:hover{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.5),5,0,0,0);
+    -fx-text-fill: #09e4f8; 
+}
+.btnprecedent{
+    -fx-background-color: #157eab;
+    -fx-background-radius: 20px;
+    -fx-cursor:hand;
+    -fx-text-fill: #fff; 
+}
+.btnprecedent:hover{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.5),5,0,0,0);
+    -fx-text-fill: #09e4f8; 
+}

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="616.0" prefWidth="656.0" stylesheets="@../Css/mainga.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestion.alumni.MainGAController">
+       <children>
+      <AnchorPane fx:id="leftpane" layoutX="-1.0" prefHeight="616.0" prefWidth="329.0" styleClass="leftpane">
+         <children>
+            <Label layoutX="89.0" layoutY="260.0" onMouseClicked="#inscrire" prefHeight="37.0" prefWidth="128.0" styleClass="leftbtn" text="S'inscrire" textFill="WHITE">
+               <font>
+                  <Font name="Helvetica" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
+            </Label>
+            <Label layoutX="17.0" layoutY="188.0" prefHeight="44.0" prefWidth="296.0" text="Veuillez s'inscrire si vous n'avez pas de compte" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="rightpane" layoutX="327.0" prefHeight="616.0" prefWidth="329.0">
+         <children>
+            <JFXTextField fx:id="usertexfield" focusColor="#2a479e" labelFloat="true" layoutX="44.0" layoutY="194.0" prefHeight="37.0" prefWidth="266.0" promptText="Votre nom d'utilisateur" unFocusColor="#13bbee">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="userpassword" labelFloat="true" layoutX="44.0" layoutY="300.0" prefHeight="37.0" prefWidth="266.0" promptText="Mot de passe" unFocusColor="#13bbee">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="connecter" layoutX="113.0" layoutY="384.0" onAction="#login" prefHeight="37.0" prefWidth="128.0" styleClass="connecter" text="Se Connecter">
+               <font>
+                  <Font name="Avenir Next Condensed Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="113.0" layoutY="436.0" styleClass="lien" text="Mot de passe oublié !" textFill="#0eace1" underline="true">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#077db9" glyphName="USER" layoutX="283.0" layoutY="221.0" size="24.0" />
+            <FontAwesomeIconView fill="#077db9" glyphName="LOCK" layoutX="284.0" layoutY="327.0" size="24.0" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="pane1" layoutX="127.0" layoutY="219.0" prefHeight="616.0" prefWidth="656.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+             <JFXTextField fx:id="prenom" labelFloat="true" layoutX="38.0" layoutY="102.0" prefHeight="37.0" prefWidth="247.0" promptText="Votre prenom*" unFocusColor="#0fa8ee">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="nom" labelFloat="true" layoutX="386.0" layoutY="102.0" prefHeight="37.0" prefWidth="247.0" promptText="Votre nom*" unFocusColor="#17adf2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="adresse" labelFloat="true" layoutX="386.0" layoutY="350.0" prefHeight="37.0" prefWidth="247.0" promptText="Adresse domicile*" unFocusColor="#0fa8ee">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tel" labelFloat="true" layoutX="38.0" layoutY="458.0" prefHeight="37.0" prefWidth="247.0" promptText="Numero de tel*" unFocusColor="#0fa8ee">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="email" labelFloat="true" layoutX="386.0" layoutY="222.0" prefHeight="37.0" prefWidth="247.0" promptText="E-mail*" unFocusColor="#17adf2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" labelFloat="true" layoutX="38.0" layoutY="350.0" prefHeight="37.0" prefWidth="247.0" promptText="Mot  de passe*" unFocusColor="#0fbdf2">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <Label layoutX="240.0" layoutY="572.0" prefHeight="30.0" prefWidth="198.0" text="Les champs * sont obligatoires." textFill="#a40e06">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="517.0" layoutY="541.0" onAction="#suivant1" prefHeight="37.0" prefWidth="115.0" styleClass="btnsuivant" text="Enregistrer" textFill="WHITE">
+               <font>
+                  <Font name="Monaco" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="223.0" layoutY="25.0" text="Informations Personnelles" textFill="#07bcbc">
+               <font>
+                  <Font name="Lucida Grande" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="champsvides1" layoutX="201.0" layoutY="61.0" text="Veuillez renseigner les champs vides!" textFill="#f50606" visible="false">
+               <font>
+                  <Font name="Lucida Grande" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="cp" labelFloat="true" layoutX="38.0" layoutY="222.0" prefHeight="37.0" prefWidth="247.0" promptText="Code permenant*" unFocusColor="#0fa8ee">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="labeltel1" layoutX="50.0" layoutY="511.0" text="Le numéro de téléphone n'est pas valide !" textFill="#f81a0e" visible="false">
+               <font>
+                  <Font name="Lucida Grande" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelemail1" layoutX="422.0" layoutY="278.0" text="L'adresse email n'est pas valide !" textFill="#f81a0e" visible="false">
+               <font>
+                  <Font name="Lucida Grande" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelcodeP" layoutX="65.0" layoutY="278.0" text="Le code permenant existe déjà !" textFill="#f81a0e" visible="false">
+               <font>
+                  <Font name="Lucida Grande" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelemail2" layoutX="414.0" layoutY="278.0" text="L'adresse email existe déjà !" textFill="#f81a0e" visible="false">
+               <font>
+                  <Font name="Lucida Grande" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="labeltel2" layoutX="51.0" layoutY="511.0" text="Le numéro de téléphone existe déjà !" textFill="#f81a0e" visible="false">
+               <font>
+                  <Font name="Lucida Grande" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pane2" prefHeight="616.0" prefWidth="656.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+           <Label layoutX="223.0" layoutY="21.0" prefHeight="59.0" prefWidth="198.0" text="Cursus Universitaire" textFill="#07bcbc">
+               <font>
+                  <Font name="Lucida Grande" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <JFXTextField fx:id="univ" labelFloat="true" layoutX="38.0" layoutY="169.0" prefHeight="37.0" prefWidth="224.0" promptText="Etablissement d'accueil*" unFocusColor="#0cbeeb">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="diplome" labelFloat="true" layoutX="38.0" layoutY="283.0" prefHeight="37.0" prefWidth="224.0" promptText="Nom du diplôme*" unFocusColor="#0cbeeb">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXTextField>
+            <DatePicker fx:id="anndebutuni" layoutX="405.0" layoutY="290.0" prefHeight="37.0" prefWidth="213.0" promptText="Année de début" />
+            <DatePicker fx:id="annfinuni" layoutX="38.0" layoutY="408.0" prefHeight="37.0" prefWidth="213.0" promptText="Année de fin" />
+            <JFXButton fx:id="suivant2" disable="true" layoutX="490.0" layoutY="541.0" onAction="#suivant2" prefHeight="37.0" prefWidth="110.0" styleClass="btnsuivant" text="Suivant">
+               <font>
+                  <Font name="Monaco" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="choix" labelFloat="true" layoutX="396.0" layoutY="414.0" prefHeight="26.0" prefWidth="231.0" promptText="Avez-vous déjà travaillé en entreprise ?" unFocusColor="#0cbff5" visible="false" visibleRowCount="8" />
+            <Label fx:id="champsvides2" layoutX="195.0" layoutY="87.0" text="Veuillez renseigner les champs vides!" textFill="#f50606" visible="false" wrapText="true">
+               <font>
+                  <Font name="Lucida Grande" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="38.0" layoutY="105.0" onAction="#ajouter" prefHeight="30.0" prefWidth="87.0" styleClass="btnprecedent" text="Ajouter">
+               <font>
+                  <Font name="Lucida Grande" size="15.0" />
+               </font>
+               <padding>
+                  <Insets right="19.0" />
+               </padding>
+            </JFXButton>
+            <FontAwesomeIconView fill="#f6fcf6" glyphName="PLUS" layoutX="103.0" layoutY="126.0" />
+            <JFXTextField fx:id="niveau" labelFloat="true" layoutX="405.0" layoutY="169.0" prefHeight="37.0" prefWidth="224.0" promptText="Niveau*" unFocusColor="#0cbeeb">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </Pane>
+      <Pane fx:id="pane3" layoutX="238.0" layoutY="157.0" prefHeight="616.0" prefWidth="656.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="220.0" layoutY="41.0" prefHeight="37.0" prefWidth="202.0" text="Parcours Professionnel" textFill="#07bcbc">
+               <font>
+                  <Font name="Lucida Grande" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <JFXTextField fx:id="entreprise" labelFloat="true" layoutX="36.0" layoutY="149.0" prefHeight="30.0" prefWidth="231.0" promptText="Nom de l'entreprise*" unFocusColor="#0bb2ff">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="typecont" labelFloat="true" layoutX="389.0" layoutY="149.0" prefHeight="30.0" prefWidth="231.0" promptText="Type de contrat*" unFocusColor="#0bb2ff">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="poste" labelFloat="true" layoutX="36.0" layoutY="285.0" prefHeight="30.0" prefWidth="231.0" promptText="Poste occupé*" unFocusColor="#0bb2ff">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </JFXTextField>
+            <DatePicker fx:id="anndebutpro" layoutX="393.0" layoutY="293.0" prefHeight="30.0" prefWidth="224.0" promptText="Année de debut" />
+            <DatePicker fx:id="annfinpro" layoutX="40.0" layoutY="412.0" prefHeight="30.0" prefWidth="224.0" promptText="Année de fin" />
+            <JFXButton layoutX="54.0" layoutY="541.0" onAction="#precedent2" prefHeight="37.0" prefWidth="110.0" styleClass="btnprecedent" text="Précédent">
+               <font>
+                  <Font name="Monaco" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="terminer" disable="true" layoutX="517.0" layoutY="541.0" onAction="#terminer" prefHeight="37.0" prefWidth="110.0" styleClass="btnsuivant" text="Terminer">
+               <font>
+                  <Font name="Monaco" size="13.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="champsvides3" layoutX="211.0" layoutY="90.0" text="Veuillez renseigner les champs vides!" textFill="#f50606" visible="false">
+               <font>
+                  <Font name="Lucida Grande" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="35.0" layoutY="93.0" onAction="#ajouterP" prefHeight="30.0" prefWidth="87.0" styleClass="btnsuivant" text="Ajouter">
+               <font>
+                  <Font name="Lucida Grande" size="15.0" />
+               </font>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="102.0" layoutY="114.0" />
+         </children>
+      </Pane>
+    </children>  
+</AnchorPane>
